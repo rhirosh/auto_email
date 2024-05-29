@@ -1,0 +1,6 @@
+.env
+.idea/
+venv/
+query_db2.py
+__pycache__/
+
