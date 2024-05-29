@@ -22,7 +22,7 @@ def send_email(subject, email_to, email_from, csv_path, filename, body, cc_email
     maintype, subtype = ctype.split("/", 1)
 
     if maintype == "text":
-        fp = open(fileToSend, encoding="utf8")
+        fp = open(fileToSend, encoding="utf-8")
         # Note: we should handle calculating the charset
         attachment = MIMEText(fp.read(), _subtype=subtype)
         fp.close()

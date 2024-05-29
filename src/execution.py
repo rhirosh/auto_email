@@ -17,7 +17,6 @@ def execution():
     query_string = get_query_db2(start_date, end_date)
     data = fetch_data_from_db2(query_string)
     csv_filename = "Control_Desk_" + start_date + "_até_" + end_date + ".csv"
-
     csv_path = csv_writer(data, csv_filename)
 
     send_email(
