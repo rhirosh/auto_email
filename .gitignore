@@ -4,4 +4,4 @@ venv/
 query_db2.py
 __pycache__/
 data/
-
+logs/
